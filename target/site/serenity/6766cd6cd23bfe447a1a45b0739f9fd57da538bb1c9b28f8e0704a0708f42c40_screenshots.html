@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="711388b40af88e6508d799102441413431c935dd3e597261758b9b93a83aab62.html">Testing Utest</a></span>
+                > <span class="truncate-60"><a
+                    href="6766cd6cd23bfe447a1a45b0739f9fd57da538bb1c9b28f8e0704a0708f42c40.html">Singup fail by already exist email address </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 06-07-2021 21:13</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Testing Utest </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                An user wants signup into a utest.com
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="a79e72087a919a05e5395e67cb178b569816b5fd714d8f63f4e83af55bd7ae34.html">Sceneario2
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Singup fail by already exist email address
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="ff72ce2bd72de1664a1af5799b7cb75622bb066519a810672d4550d16938e96c.png" title=" Given brandon wants to singup into a utest.com" width="1440"/>
+                <img src="ff72ce2bd72de1664a1af5799b7cb75622bb066519a810672d4550d16938e96c.png" title=" Brandon open up" width="1440"/>
+                <img src="ff72ce2bd72de1664a1af5799b7cb75622bb066519a810672d4550d16938e96c.png" title=" Brandon opens the Utest page" width="1440"/>
+                <img src="ff72ce2bd72de1664a1af5799b7cb75622bb066519a810672d4550d16938e96c.png" title=" Brandon open up (completed)" width="1440"/>
+                <img src="ff72ce2bd72de1664a1af5799b7cb75622bb066519a810672d4550d16938e96c.png" title=" Given brandon wants to singup into a utest.com (completed)" width="1440"/>
+                <img src="ff72ce2bd72de1664a1af5799b7cb75622bb066519a810672d4550d16938e96c.png" title=" When brandon clicks on button Join today" width="1440"/>
+                <img src="6079a6297e2af9f62a28bfe95add21a62d127b5a5117612d6b502a0b53e7fa08.png" title=" And brandon is writing his credentials on stepOne
+| strFistName | strLastName | strEmail | strMonth | strDay | strYear | strCity | strZipCode | strCountry | strComputer | strVersion | strLanguagePc | strMobileDevice | strModel | strOS | strPassword | strLanguageUser |
+| Nicolas | Caraballo | nikecarvaggio@gmail.com | December | 28 | 1995 | Buenos Aires | B1675 | Argentina | macos | 10.7.5 | spanish | Motorola | macro | 8 | TesTing-123++ | Spanish |" width="1440"/>
+                <img src="6079a6297e2af9f62a28bfe95add21a62d127b5a5117612d6b502a0b53e7fa08.png" title=" Brandon register failed" width="1440"/>
+                <img src="6079a6297e2af9f62a28bfe95add21a62d127b5a5117612d6b502a0b53e7fa08.png" title=" Brandon clicks on button that send to registration page" width="1440"/>
+                <img src="8bd99dc04495d808de182a9caa2722e9e41714641caf6af2c41b533fa557a9eb.png" title=" Brandon enters 'Nicolas' into locate field to write fistname" width="1440"/>
+                <img src="3fcf49d74ef8a8afd6c447e045170637995fbf1e0301c97feab02c51e102d637.png" title=" Brandon enters 'Caraballo' into locate field to write lastname" width="1440"/>
+                <img src="c2c190bc858ad65861381963ddc200e291ff15a812a04c90389bc0a194136ff9.png" title=" Brandon enters 'nikecarvaggio@gmail.com' into locate field to write email" width="1440"/>
+                <img src="623024c65fee3750cae37acabd11593ff9e2aac28890cd63fc938d2eca1fe85a.png" title=" Brandon select December on locate field to write date" width="1440"/>
+                <img src="2ccb0cafb8530d521afcd50f8f0d10725e047b183d4244ec7fd0e29d93765661.png" title=" Brandon select 28 on locate field to write date" width="1440"/>
+                <img src="ffc4e2198456b51b45cc1cecd40c1ab5a84bb8eda33927d2c1fc80173dcce84d.png" title=" Brandon select 1995 on locate field to write date" width="1440"/>
+                <img src="2dce9b271ea6ffb8917327901896f9031d38b6e16e3d38ea14e3e37466c6b65b.png" title=" Brandon enters 'Spanish' into locate field to write language" width="1440"/>
+                <img src="ee78a88f995abf50635267e9ddf15870575a46de4f741c69c9ed9039f726e007.png" title=" Brandon types 'DOWN' in locate field to write language" width="1440"/>
+                <img src="2929e23b25e1da94e1af4a8c1e2065fe734c1ede1341ffb0f54e64544ce33eb4.png" title=" Brandon types 'ENTER' in locate field to write language" width="1440"/>
+                <img src="ffb50009555750ce4176a54a12efdf5ef59690bf1a5bb2893785b978d8dd6ab5.png" title=" Brandon register failed (completed)" width="1440"/>
+                <img src="ffb50009555750ce4176a54a12efdf5ef59690bf1a5bb2893785b978d8dd6ab5.png" title=" And brandon is writing his credentials on stepOne
+| strFistName | strLastName | strEmail | strMonth | strDay | strYear | strCity | strZipCode | strCountry | strComputer | strVersion | strLanguagePc | strMobileDevice | strModel | strOS | strPassword | strLanguageUser |
+| Nicolas | Caraballo | nikecarvaggio@gmail.com | December | 28 | 1995 | Buenos Aires | B1675 | Argentina | macos | 10.7.5 | spanish | Motorola | macro | 8 | TesTing-123++ | Spanish | (completed)" width="1440"/>
+                <img src="c137c68040ffdb15f773a51b80051ecd3f82e24e20a58215ebe61063e79c7510.png" title=" Then brandon wrote an exists email on utest.com
+| strQuestion |
+| Email already registered |" width="1440"/>
+                <img src="c137c68040ffdb15f773a51b80051ecd3f82e24e20a58215ebe61063e79c7510.png" title=" Then answer email already registered" width="1440"/>
+                <img src="c137c68040ffdb15f773a51b80051ecd3f82e24e20a58215ebe61063e79c7510.png" title=" Then brandon wrote an exists email on utest.com
+| strQuestion |
+| Email already registered | (completed): <span class='success-color'>SUCCESS</span>" width="1440"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
