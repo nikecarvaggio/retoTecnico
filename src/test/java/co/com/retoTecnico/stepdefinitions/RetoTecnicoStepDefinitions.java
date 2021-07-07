@@ -25,8 +25,8 @@ public class RetoTecnicoStepDefinitions {
         OnStage.setTheStage(new OnlineCast());
     }
 
-    @Given("^brandon wants to singup into a utest\\.com$")
-    public void brandonWantsToSingupIntoAUtestCom() {
+    @Given("^brandon wants to signup into a utest\\.com$")
+    public void brandonWantsToSignupIntoAUtestCom() {
 
         OnStage.theActorCalled("Brandon").wasAbleTo(OpenUp.thePage());
     }
@@ -90,8 +90,8 @@ public class RetoTecnicoStepDefinitions {
 
     }
 
-    @Then("^brandon wrote an exists email on utest\\.com$")
-    public void brandonWroteAnExistsEmailOnUtestCom(List<UtestSignUpPageData> utestSignUpPageData) {
+    @Then("^brandon wrote an existing email on utest\\.com$")
+    public void brandonWroteAnExistingEmailOnUtestCom(List<UtestSignUpPageData> utestSignUpPageData) {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerEmailAlreadyRegistered.toThe(utestSignUpPageData.get(0).getStrQuestion())));
 
     }

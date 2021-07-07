@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testing utest" skipped="1" tests="2" time="134.08" timestamp="2021-07-06 10:22:04"><testcase name="Signup successfully"/><testcase name="Sing up failed email address already in use"><skipped/></testcase></testsuite>
