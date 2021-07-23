@@ -64,8 +64,8 @@ public class Register implements Task {
         actor.attemptsTo(
                 Click.on(UtestSignUpPage.SIGNUP_BUTTON),
                 Enter.theValue(strFistName).into(UtestSignUpPage.INPUT_FIRSTNAME),
-                Enter.theValue(strLastName).into(UtestSignUpPage.INPUT_LASTNAME),
-                Enter.theValue(strEmail).into(UtestSignUpPage.INPUT_EMAIL),
+                Enter.theValue(strLastName).into(UtestSignUpPage.INPUT_LASTNAME)
+                /*Enter.theValue(strEmail).into(UtestSignUpPage.INPUT_EMAIL),
                 SelectFromOptions.byVisibleText(strMonth).from(UtestSignUpPage.INPUT_MONTH),
                 SelectFromOptions.byVisibleText(strDay).from(UtestSignUpPage.INPUT_DAY),
                 SelectFromOptions.byVisibleText(strYear).from(UtestSignUpPage.INPUT_YEAR),
@@ -114,7 +114,7 @@ public class Register implements Task {
                 Click.on(UtestSignUpPage.CHECKBOX_PRIVACY_SECURITY),
                 Click.on(UtestSignUpPage.BUTTON_COMPLETE_SETUP),
                 WaitUntil.the(UtestSignUpPage.SUCCESSFULLY_SIGNUP, WebElementStateMatchers.isVisible()).forNoMoreThan(120).seconds()
-
+*/
 
         );
     }
